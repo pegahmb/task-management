@@ -1,0 +1,4 @@
+api_doc:
+  path: /swagger
+  methods: GET
+  controller: nelmio_api_doc.controller.swagger_ui

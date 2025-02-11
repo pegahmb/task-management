@@ -1,0 +1,19 @@
+nelmio_api_doc:
+    documentation:
+        info:
+            title: "Task Management API"
+            description: "API documentation for Task Management"
+            version: "1.0.0"
+        components:
+            securitySchemes:
+                BearerAuth:
+                    type: http
+                    scheme: bearer
+                    bearerFormat: JWT
+        security:
+            - BearerAuth: [ ]
+    areas:
+        path_patterns:
+            - ^/api
+    models:
+        use_jms: false
